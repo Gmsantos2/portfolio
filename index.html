@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gerson Santos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="nav-div">
             <nav class="navbar">
                 <a class="logo" href="#"><img src="./assets/img/icons8-letra-g-35.png" alt="Gerson-Dev"></a>
-                <ul class="list">
-                    <li class="list-item"><a class="list-link" href="#about">About me</a></li>
-                    <li class="list-item"><a class="list-link" href="#skills">Skills</a></li>
-                    <li class="list-item"><a class="list-link" href="#projects">Projects</a></li>
-                    <li class="list-item"><a class="list-link" href="#contact">Contact</a></li>
-                    <li class="list-item"><button></button></li>
-                </ul>
+                
+                <div class="header_menu">
+                    <button class="header__btn btn--close">
+                        <i class='bx bx-x'></i>
+                    </button>
+                    <ul class="list">
+                        <li class="list-item"><a class="list-link" href="#about">About me</a></li>
+                        <li class="list-item"><a class="list-link" href="#skills">Skills</a></li>
+                        <li class="list-item"><a class="list-link" href="#projects">Projects</a></li>
+                        <li class="list-item"><a class="list-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <button class="header__btn btn--open">
+                    <i class='bx bx-menu'></i>
+                  </button>
             </nav>
         </div>
     </header>
@@ -32,7 +41,7 @@
             <div class="text-pre dos">
                 <h2 class="text-init"><span>Hi!...</span>I am</h2>
                 <h1>Gerson Santos Salazar</h1>
-                <p>Web developer</p>
+                <p>Full Stack Developer</p>
                 <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate magnam aperiam in
                     nihil saepe, aspernatur, ut iste, ratione reprehenderit debitis adipisci! Minima nisi esse sapiente
                     iusto perspiciatis sed praesentium quas!</p>
@@ -61,7 +70,7 @@
                 </div>
             </div>
             <div id="skills" class="container">
-                <h2 >Skills</h2>
+                <h2>Skills</h2>
                 <div class="content-skills">
                     <div class="elemento">
                         <svg class="svg-inline--fa fa-html5 fa-w-12 fa-5x " role="img"
@@ -163,6 +172,7 @@
         <p class="footer__copy">&copy; 2023</p>
         <p>Gerson-Dev</p>
     </footer>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
