@@ -33,7 +33,9 @@ body{
 }
 /* Tablets */
 @media (min-width: 767px) {
-  
+  .text-pre{
+    width: 250px;
+  }
   .btn--open {
     display: none;
   }
@@ -52,6 +54,7 @@ body{
 }
 /* Desktops */
 @media (min-width: 1024px) {
+  
 
 }
 h1{
@@ -100,14 +103,16 @@ span{
     margin: 15px 15px 15px 35px;
 }
 .box-pre{
+  max-width: 1024px;
   display:flex;
+  margin: 0 20px ;
   justify-content: space-around;
-  margin-left: 30px ;
-  margin-right: 20px ;
   gap: 15px;
 }
 .circular-landspace {
-  display: inline-block;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
   position: relative;
   width: 250px;
   height: 250px;
@@ -120,11 +125,10 @@ span{
   width: auto;
   height: 100%;
   margin-left: -145px;
+  
 }
 .text-pre{
-  display: inline-block;
-  width: 250px;
-  margin: 25px 20px 20px 10px  ;
+  padding: 25px 20px 20px 10px  ;
 }
 .text{
   font-size: 14px;
@@ -365,6 +369,9 @@ button {
 } */
 /* móviles */
 @media (max-width: 768px) {
+  .text-pre{
+    width: 100%;
+  }
   .header_menu {
     position: fixed;
     top: 0;
@@ -397,7 +404,7 @@ button {
   
   .foll-row{
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 15px;
   }
   .card{
